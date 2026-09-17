@@ -1,0 +1,66 @@
+[
+  {
+    "blockNumber": 0,
+    "channelId": "battery-channel",
+    "previousBlockHash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "dataHash": "56ad4c41155d38ad82173087b025a59cce7bcd9d862a3cfbe7c543eb5e2d94e3",
+    "blockHash": "44117a1c0b06b45bb6cb962a6a2d294ae09823ca09750ee9e8e41b4f817d4046",
+    "timestamp": "2026-09-15T19:36:59.132Z",
+    "transactions": [],
+    "metadata": {
+      "creatorMsp": "OrdererMSP",
+      "signature": "c570cc416079777a533119a1d28c6e48688bd8b717000157218ece79282af4a1"
+    }
+  },
+  {
+    "blockNumber": 1,
+    "channelId": "battery-channel",
+    "previousBlockHash": "44117a1c0b06b45bb6cb962a6a2d294ae09823ca09750ee9e8e41b4f817d4046",
+    "dataHash": "c628ddbdb20eceeb8c6c75032f0461a6f9aa093e1f165397926a3a5bafa090e3",
+    "blockHash": "9bb88cfa8631806a2bb1e5eaeea0d91f8a81f8e575f6f6d1753e12aa62ee8e76",
+    "timestamp": "2026-09-15T19:36:59.134Z",
+    "transactions": [
+      {
+        "txId": "TX-C879E88F63D33A6D",
+        "channelId": "battery-channel",
+        "chaincodeId": "battery-epr",
+        "functionName": "InitLedger",
+        "args": [],
+        "rwSet": {
+          "reads": [],
+          "writes": [
+            {
+              "key": "RECYCLER_REC-CPCB-KAR-042",
+              "value": "{\"recyclerId\":\"REC-CPCB-KAR-042\",\"companyName\":\"EcoMetals Green Recycling Ltd\",\"cpcbAuthNumber\":\"CPCB/BWM/AUTH/2023/REC-KAR-042\",\"state\":\"Karnataka\",\"permittedChemistries\":[\"LITHIUM_ION\",\"LEAD_ACID\"],\"annualCapacityTons\":6500,\"status\":\"AUTHORIZED\",\"authExpiry\":\"2028-12-31\",\"docType\":\"recycler\"}",
+              "isDelete": false
+            },
+            {
+              "key": "RECYCLER_REC-CPCB-MH-108",
+              "value": "{\"recyclerId\":\"REC-CPCB-MH-108\",\"companyName\":\"Attero CleanTech India Pvt Ltd\",\"cpcbAuthNumber\":\"CPCB/BWM/AUTH/2022/REC-MH-108\",\"state\":\"Maharashtra\",\"permittedChemistries\":[\"LITHIUM_ION\",\"LEAD_ACID\",\"NICKEL_CADMIUM\"],\"annualCapacityTons\":12000,\"status\":\"AUTHORIZED\",\"authExpiry\":\"2029-06-30\",\"docType\":\"recycler\"}",
+              "isDelete": false
+            },
+            {
+              "key": "RECYCLER_REC-CPCB-DL-021",
+              "value": "{\"recyclerId\":\"REC-CPCB-DL-021\",\"companyName\":\"Gravita PureMetals Solutions\",\"cpcbAuthNumber\":\"CPCB/BWM/AUTH/2024/REC-DL-021\",\"state\":\"Delhi NCR\",\"permittedChemistries\":[\"LEAD_ACID\"],\"annualCapacityTons\":8000,\"status\":\"AUTHORIZED\",\"authExpiry\":\"2027-10-15\",\"docType\":\"recycler\"}",
+              "isDelete": false
+            },
+            {
+              "key": "BATTERY_BAT-IND-2026-SEED01",
+              "value": "{\"id\":\"BAT-IND-2026-SEED01\",\"chemistry\":\"LITHIUM_ION\",\"model\":\"Tata AutoComp EV-Cell 48V 60Ah\",\"weightKg\":24.5,\"manufacturerId\":\"MFG-TATA-AUTO-PUNE\",\"producerEprNo\":\"CPCB-EPR-BWM-2023-TAT789\",\"status\":\"MANUFACTURED\",\"consumerRegion\":null,\"collectorId\":null,\"collectionLocation\":null,\"recyclerId\":null,\"recycledDate\":null,\"recoveredMaterials\":null,\"eprCertificateId\":null,\"registeredAt\":\"2026-09-15T19:36:59.135Z\",\"lastUpdatedAt\":\"2026-09-15T19:36:59.135Z\",\"docType\":\"battery\"}",
+              "isDelete": false
+            }
+          ]
+        },
+        "events": [],
+        "status": 200,
+        "timestamp": "2026-09-15T19:36:59.134Z",
+        "endorserMsp": "Org1MSP",
+        "endorsementSignature": "88425ffeb335053623db136afd5c19146cf6d1ed978834faa76ca842738426c2"
+      }
+    ],
+    "metadata": {
+      "blockCreator": "OrdererMSP",
+      "ordererSignature": "877d3c8377801a30eae4758daf438b9f28e7dca50ccea20c701b38991a871106"
+    }
+  }
+]
