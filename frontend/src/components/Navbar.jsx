@@ -81,14 +81,14 @@ export default function Navbar({ activeTab, setActiveTab, networkStatus, onOpenE
                 onClick={() => setActiveTab(item.id)}
                 className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all whitespace-nowrap ${
                   isActive
-                    ? 'bg-slate-800 text-white shadow-md border border-slate-700'
+                    ? 'bg-copper-500/10 text-white shadow-md border border-copper-500/60'
                     : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/60'
                 }`}
               >
                 <Icon className={`w-4 h-4 ${item.color}`} />
                 <span>{item.label}</span>
                 {isActive && (
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 ml-1"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-copper-400 ml-1"></span>
                 )}
               </button>
             );

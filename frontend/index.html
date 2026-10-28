@@ -18,19 +18,104 @@
               mono: ['JetBrains Mono', 'monospace'],
             },
             colors: {
+              slate: {
+                50: '#F4F3F0',
+                100: '#F5F5F3',
+                200: '#F5F5F3',
+                300: '#B8B9BA',
+                400: '#B8B9BA',
+                500: '#96989A',
+                600: '#686B6E',
+                700: '#3A3D41',
+                800: '#23262A',
+                900: '#23262A',
+                950: '#17191C',
+              },
+              copper: {
+                50: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                100: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                200: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                300: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                400: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                500: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                600: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                700: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+                800: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+                900: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+                950: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+              },
+              blue: {
+                50: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                100: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                200: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                300: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                400: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                500: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                600: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                700: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+                800: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+                900: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+              },
+              teal: {
+                400: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                500: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                600: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                700: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+                800: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+                900: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+              },
+              emerald: {
+                400: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                500: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                600: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                700: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+                800: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+                900: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+                950: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+              },
+              green: {
+                400: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                500: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                600: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+                700: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+              },
+              amber: {
+                400: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                500: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                600: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                700: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+              },
+              purple: {
+                400: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                500: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                600: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                700: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+              },
+              rose: {
+                400: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                500: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                600: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                700: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+              },
+              red: {
+                400: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                500: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                600: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                700: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+              },
               brand: {
-                50: '#f0fdf4',
-                100: '#dcfce7',
-                500: '#22c55e',
-                600: '#16a34a',
-                700: '#15803d',
-                900: '#14532d',
+                50: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                100: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                500: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                600: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+                700: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
+                900: 'rgb(var(--copper-deep-rgb) / <alpha-value>)',
               },
               cpcb: {
-                blue: '#0284c7',
-                dark: '#0f172a',
-                amber: '#f59e0b',
-                emerald: '#10b981'
+                blue: 'rgb(var(--copper-rgb) / <alpha-value>)',
+                dark: '#17191C',
+                amber: 'rgb(var(--copper-light-rgb) / <alpha-value>)',
+                emerald: 'rgb(var(--copper-rgb) / <alpha-value>)'
               }
             }
           }
@@ -38,20 +123,57 @@
       }
     </script>
     <style>
+      :root {
+        --copper: #C96A36;
+        --copper-rgb: 201 106 54;
+        --copper-light: #E58A50;
+        --copper-light-rgb: 229 138 80;
+        --copper-deep: #8E4528;
+        --copper-deep-rgb: 142 69 40;
+        --surface-near-black: #17191C;
+        --surface-raised: #23262A;
+        --text-on-dark: #F5F5F3;
+        --text-secondary: #B8B9BA;
+        --content-light: #F4F3F0;
+        --text-on-light: #202124;
+        --border-dark: #3A3D41;
+      }
       body {
         font-family: 'Inter', sans-serif;
-        background-color: #0b0f19;
-        color: #e2e8f0;
+        background-color: var(--surface-near-black);
+        color: var(--text-on-dark);
+      }
+      :focus-visible {
+        outline: 2px solid var(--copper-light);
+        outline-offset: 2px;
+      }
+      input, select, textarea {
+        accent-color: var(--copper);
+      }
+      [class~="hover:bg-emerald-500"]:hover,
+      [class~="hover:bg-green-500"]:hover,
+      [class~="hover:bg-blue-500"]:hover,
+      [class~="hover:bg-teal-500"]:hover,
+      [class~="hover:bg-amber-500"]:hover,
+      [class~="hover:bg-purple-500"]:hover,
+      [class~="hover:bg-rose-500"]:hover {
+        background-color: var(--copper-deep);
+      }
+      [class~="border-slate-800"],
+      [class~="border-slate-800/80"],
+      [class~="border-slate-800/50"],
+      [class~="border-slate-800/40"] {
+        border-color: var(--border-dark);
       }
       .custom-scrollbar::-webkit-scrollbar {
         width: 6px;
         height: 6px;
       }
       .custom-scrollbar::-webkit-scrollbar-track {
-        background: #111827;
+        background: var(--surface-near-black);
       }
       .custom-scrollbar::-webkit-scrollbar-thumb {
-        background: #374151;
+        background: var(--border-dark);
         border-radius: 3px;
       }
     </style>
